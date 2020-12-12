@@ -1,0 +1,11 @@
+version: '3'
+services:
+
+  app:
+    build: ./haskell
+    container_name: '${COMPOSE_PROJECT_NAME}-app'
+    volumes:
+      - "../src:/opt/src"
+    working_dir: /opt/src
+    stdin_open: true
+    tty: true
