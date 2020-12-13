@@ -1,6 +1,15 @@
 module Lib
-    ( someFunc
+    (
+    someFunc,
+    factorial,
+    circumference
     ) where
 
 someFunc :: IO ()
-someFunc = putStrLn "someFunc"
+someFunc = putStrLn "hello world"
+
+factorial :: Integer -> Integer
+factorial n = product [1..n]
+
+circumference :: Float -> Float
+circumference r = 2 * pi * r
